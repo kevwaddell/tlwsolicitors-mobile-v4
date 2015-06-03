@@ -1,0 +1,35 @@
+#breadcrumbs {
+.bg-col(@grayLt);
+	
+		.breadcrumb_last {
+		.bold;
+		}
+	
+		#breadcrumbs-inner {
+		.pad-top(.8);
+		.pad-bot(.8);
+		.col(@gray);
+		text-align: left;
+		.over-hide;
+		.fleft;
+		width: 100%;
+		-webkit-font-smoothing: subpixel-antialiased;
+		}
+		
+		.breadcrumb_last {
+		.col(@grayDk);	
+		}
+	
+		a {
+		.col(lighten(@gray, 20%));	
+		.no-text-dec;
+			&:hover, &:active, &:hover {
+			.col(white);
+			}
+		}	
+}
+
+.header-border {
+.h(0.4);
+.bg-col(@grayLt);
+}

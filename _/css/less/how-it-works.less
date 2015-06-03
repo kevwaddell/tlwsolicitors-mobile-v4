@@ -1,0 +1,163 @@
+#how-it-works {
+.fixed;
+overflow: hidden;
+.top(0);
+.left(0);
+.right(0);
+height: 100%;
+.trans-bg(@gray; 0.9);
+z-index: 100;
+-webkit-animation-duration: 0.5s;
+-moz-animation-duration: 0.5s;
+-ms-animation-duration: 0.5s;
+animation-duration: 0.5s;
+
+	button#close-how-it-works {
+	.abs;
+	.right(1);
+	.top(1);
+	.no-border;
+	.pad-all(0);
+	.w(4);
+	.h(4);
+	.bg-col(white);
+	.col(@gray);
+	.rounded(20px);
+		&:hover, &:active, &:focus {
+		.bg-col(@grayDk);
+		.col(white);
+		}
+	}
+
+	.step {
+	.abs;
+	left: 50%;
+	bottom: -100%;
+	width: 86%;
+	margin-left: -43%;
+	.pad(4;1;1;1);
+	.bg-col(@gray);
+	.border(white; 0.4);
+	.rounded(12px);
+	text-align: center;
+	.drop-shadow(0, 0, 20px, 0.5);
+	.opacity(0);
+	
+	
+		&#start {
+		.block;	
+		.opacity(1);
+		bottom: 10%;
+		}
+	
+		.icon {
+		.abs;
+		.top(-2.5);
+		left: 50%;
+		.mag-left(-2.5);
+		.w(5);
+		.h(5);
+		.bg-col(white);
+		text-align: center;
+		.rounded(25px);
+			i {
+			.line-h(5);
+			.col(@gray);
+			}	
+		}
+
+		p {
+		.bold;	
+		}
+		p.header {
+		.col(white);
+		.caps;	
+		.font-size(1.8);
+		.line-h(2);
+		.mag-bot(1);
+		}
+		
+		p.text {
+		.col(@grayDk);
+		.font-size(1.4);
+		.line-h(1.6);	
+		.mag-bot(2);
+			span {
+			.col(white);
+			.caps;	
+			}
+		}
+		
+		a {
+		.in-block;
+		.caps;	
+		text-align: center;
+		.no-text-dec;
+		.mag-bot(1);
+			span {
+			.in-block;	
+			.pad(0;1;0;4);
+			.h(3);
+			.bg-col(white);
+			.rounded(8px);
+			.line-h(3);
+			.rel;
+			.font-size(1.4);
+				i {
+				.abs;
+				.h(3);	
+				.line-h(3);
+				.left(1);
+				}
+			}
+			&:hover, &:active, &:focus {
+			
+				span {
+				.bg-col(@grayDk);
+				.col(white);	
+				}
+			}
+			&.back-link {
+			.abs;
+			.top(-10);
+			left: 50%;
+			.line-h(4);
+			.mag-left(-2);
+			.mag-bot(0);
+			.pad-all(0);	
+			.w(4);
+			.bg-col(white);
+			.col(@gray);
+			.opacity(0.3);
+			.rounded(8px);
+				&:hover, &:active, &:focus {
+				.opacity(1);
+				}
+			}
+		}	
+	}
+	
+	&.panel-red {
+		.how-it-works-cols(@red);
+	}
+	
+	&.panel-purple {
+		.how-it-works-cols(@purple);
+	}
+	
+	&.panel-green {
+		.how-it-works-cols(@green);
+	}
+	
+	&.panel-pink {
+		.how-it-works-cols(@pink);
+	}
+	
+	&.panel-orange {
+		.how-it-works-cols(@orange);
+	}
+	
+	&.panel-blue {
+		.how-it-works-cols(@blue);
+	}
+}

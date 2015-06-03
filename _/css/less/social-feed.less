@@ -1,0 +1,160 @@
+.sidebar-feeds-block {
+	
+	ul.wprssmi_bullet_list {
+		.mag-bot(0);
+		.pad-left(0);
+		list-style: none;
+		
+			li {
+			.pad-right(1);
+			.pad-left(2);	
+			.mag-bot(2);
+			
+				&:last-child {
+				.mag-bot(0);	
+				}
+			}	
+			
+			a {
+			.block;
+			.font-size(1.4);
+			.no-text-dec;
+			.col(@grayDk);
+			word-wrap: break-word;
+				&:hover, &:active, &:focus {
+				.col(@gray);	
+				}	
+			}	
+			
+			span.date {
+			.font-size(1.2);
+			.caps;
+			.col(@red);	
+			}
+	}
+}
+
+.sidebar-feeds-block {
+//.mag-bot(0.4);
+
+	ul.feed-links {
+	.bg-col(@grayLt);
+	.h(4.4);
+	.pad-left(0);
+	.mag-bot(0);
+	.border-bot(white; 0.4);
+	
+		li {
+		.fleft;	
+		width: 100/3%;
+		.border-right(white; 0.4);
+					
+			&:last-child {
+			.no-border;
+			}
+			
+			a {
+			.block;
+			.h(4);	
+			text-align: center;
+			.line-h(4);
+			.bg-col(@gray);
+			.col(white);	
+			}
+			
+			&.active {
+				a {
+				.bg-col(@red);	
+				}
+				
+				&.twitter {
+					a {
+					.bg-col(@twitter_blue);	
+					}
+				}
+				
+				&.facebook {
+					a {
+					.bg-col(@facebook_blue);	
+					}
+				}
+				
+				&.google {
+					a {
+					.bg-col(@google_orange);	
+					}
+				}
+			}
+		}	
+	}
+	
+	.sidebar-tab-content {
+	.pad-top(2);
+	.pad-bot(2);
+	.pad-right(1);
+	.bg-col(@grayLt);
+	.border-bot(white; 0.4);
+	
+		.feed-wrap {
+		.h(30);
+		overflow-y: auto;
+		
+			ul.feed-list {
+			.mag-bot(0);
+				li {
+				.pad-right(1);
+				.pad-left(2);	
+				.mag-bot(2);
+				
+					&:last-child {
+					.mag-bot(0);	
+					}
+				}	
+				
+				p.title {
+				.mag-bot(0);
+				.font-size(1.4);
+				
+					a {
+					.no-text-dec;
+					.col(@grayDk);
+					word-wrap: break-word;
+						&:hover, &:active, &:focus {
+						.col(@gray);	
+						}	
+					}	
+				}
+				
+				span.date {
+				.font-size(1.2);
+				.caps;
+				.col(@red);	
+				}
+			}
+			
+		}
+		
+		a.feed-link {
+		.mag-top(2);
+		.block;
+		.h(4);
+		.line-h(4);
+		.bg-col(@gray);
+		.indent(1);
+		.col(white);
+		.no-text-dec;
+			i {
+			.h(4);
+			.line-h(4);	
+			.fright;
+			.indent(0);
+			.pad-right(1);
+			}
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@red);	
+			}
+		}
+
+	}	
+}
