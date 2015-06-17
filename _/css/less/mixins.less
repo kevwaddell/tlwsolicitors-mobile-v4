@@ -554,11 +554,11 @@ border-radius: 0px;
 		}
 		
 		a.jump-link, a.go-to-link {
-		.bg-col(darken(@col, 20%));
+		.bg-col(@col);
 		.col(white);
 			
 			&:hover, &:active, &:focus {
-			.bg-col(@col);
+			.bg-col(darken(@col, 20%));
 			}
 			
 		}
