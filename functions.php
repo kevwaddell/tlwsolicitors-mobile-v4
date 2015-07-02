@@ -115,7 +115,7 @@ function add_feat_img ( $post ) {
 
 function add_wide_feat_img ( $post, $classes = "" ) {	
 		
-	$post_thumbnail_id = get_post_thumbnail_id( $post->ID );
+	$post_thumbnail_id = get_post_thumbnail_id( $post );
 	$attachment = get_post( $post_thumbnail_id );
 	$alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
 	
@@ -137,7 +137,7 @@ function add_wide_feat_img ( $post, $classes = "" ) {
 	$img_atts['title'] = 	trim(strip_tags( $attachment->post_title ));
 	}
 	
-	echo get_the_post_thumbnail($post->ID ,'feat-img-wide', $img_atts );
+	echo get_the_post_thumbnail($post ,'feat-img-wide', $img_atts );
 	
 }
 
