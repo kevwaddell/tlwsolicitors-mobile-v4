@@ -210,9 +210,6 @@ include (STYLESHEETPATH . '/_/functions/submit_newsletter.php');
 /* NEXT PREVIOUS ADMIN POST/PAGES LINKS FUNCTION */
 //include (STYLESHEETPATH . '/_/functions/next-prev-post-admin.php');
 
-//holder_add_theme( 'wordpress', '333333', 'eeeeee' );
-holder_add_theme( 'lite-gray', '888888', 'eeeeee' );
-
 function add_gf_cap() {	
    $id = 2;
    $role = new WP_User( $id );
