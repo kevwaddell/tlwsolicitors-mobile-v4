@@ -12,7 +12,7 @@ if ( !function_exists(core_mods) ) {
 			wp_register_style( 'mobile-styles', get_stylesheet_directory_uri().'/_/css/styles.css', null, filemtime( get_stylesheet_directory().'/_/css/styles.css' ), 'screen' );
 			wp_register_script( 'jquery-cookie', get_stylesheet_directory_uri() . '/_/js/jquery.cookie.js', array('jquery'), '1.0.0', true );
 			wp_register_script( 'slim-scroll', get_stylesheet_directory_uri() . '/_/js/jquery.slimscroll.min.js', array('jquery'), '1.0.0', true );
-			wp_register_script( 'bootstrap-select', 'http://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.js', array('jquery', 'bootstrap-all-min'), '1.0.0', true );
+			wp_register_script( 'bootstrap-select', 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/js/bootstrap-select.min.js', array('jquery', 'bootstrap-all-min'), '1.0.0', true );
 			wp_register_script( 'functions', get_stylesheet_directory_uri() . '/_/js/functions-min.js', array('jquery', 'jquery-ui-core', 'bootstrap-all-min', 'jquery-cookie', 'slim-scroll'), '1.0.1', true );
 			wp_enqueue_style('select-css');
 			wp_enqueue_style('mobile-styles');
