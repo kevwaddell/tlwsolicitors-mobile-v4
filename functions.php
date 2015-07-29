@@ -28,6 +28,9 @@ if ( !function_exists(core_mods) ) {
 
 add_action( 'after_setup_theme', 'editor_styles' );
 
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 function editor_styles() {
 add_editor_style(get_stylesheet_directory_uri().'/_/css/custom-editor-style.css');	
 }
