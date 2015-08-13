@@ -19,6 +19,8 @@ Template Name: Service Landing page template
 			$feedback_active = get_field('feedback_active'); 
 			$how_it_works_active = get_field('hiw_active');
 			
+			//echo '<pre>';print_r($page_icon);echo '</pre>';
+			
 			if (empty($number_pos)) {
 			$number_pos = "bottom";	
 			}

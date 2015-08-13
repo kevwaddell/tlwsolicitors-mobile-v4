@@ -1,11 +1,16 @@
+a.btn {
+.font-normal;
+font-weight: bold;
+}
+
 a.icon-btn {
 .block;
 .bg-col(@grayDk);
 .col(white);
-.h(4);
-.line-h(4);
+.h(5);
+.line-h(5);
 .pad-all(0);
-.font-size(1.4);
+.font-size(1.6);
 .mag-top(1);
 .no-text-dec;
 .indent(2);
@@ -13,6 +18,7 @@ text-align: left;
 .no-border;
 .rounded(8px);
 .rel;
+.caps;
 
 	&:after {
 	content: "\f0a9";	
@@ -21,7 +27,7 @@ text-align: left;
 	.right(0);
 	.top(0);
 	.col(@gray);
-	.line-h(4);
+	.line-h(5);
 	.pad-right(1);
 	.font-size(1.6);
 	}
@@ -42,8 +48,8 @@ text-align: left;
 a.download-link {
 .block;
 .caps;
-.font-size(1.4);
-.line-h(4);
+.font-size(1.6);
+.line-h(5);
 .no-text-dec;
 .bg-col(@gray);
 .col(white);
@@ -54,13 +60,13 @@ text-align: left;
 .rel;
 
 	&:after {
-	content: "\f0ab";	
+	content: "\f0a9";	
 	font-family: FontAwesome;
 	.abs;
 	.right(1);
 	.top(0);
-	.h(4);
-	.line-h(4);
+	.h(5);
+	.line-h(5);
 	.col(white);
 	text-align: center;
 	}
@@ -73,8 +79,8 @@ text-align: left;
 a.jump-link {
 .block;
 .caps;
-.font-size(1.4);
-.line-h(4);
+.font-size(1.6);
+.line-h(5);
 .no-text-dec;
 .bg-col(@gray);
 .col(white);
@@ -90,8 +96,8 @@ text-align: left;
 	.abs;
 	.right(1);
 	.top(0);
-	.h(4);
-	.line-h(4);
+	.h(5);
+	.line-h(5);
 	.col(white);
 	text-align: center;
 	}
@@ -106,8 +112,8 @@ text-align: left;
 a.go-to-link {
 .block;
 .caps;
-.font-size(1.4);
-.line-h(4);
+.font-size(1.6);
+.line-h(5);
 .no-text-dec;
 .bg-col(@gray);
 .col(white);
@@ -123,8 +129,8 @@ text-align: left;
 	.abs;
 	.right(1);
 	.top(0);
-	.h(4);
-	.line-h(4);
+	.h(5);
+	.line-h(5);
 	.col(white);
 	text-align: center;
 	}
@@ -136,16 +142,18 @@ text-align: left;
 }
 
 button.sb-menu-btn {
-.h(4);
-.line-h(4);
+.h(5);
+.line-h(5);
 .pad-all(0);
-.font-size(1.4);
+.font-size(1.6);
 .indent(1);
 text-align: left;
 .no-border;
 .col(white);
 .bg-col(@redMid);
 .rel;
+.caps;
+.bold;
 
 	&:after {
 	content: "\f0c9";	
@@ -154,7 +162,7 @@ text-align: left;
 	.right(0);
 	.top(0);
 	.col(@red);
-	.line-h(4);
+	.line-h(5);
 	.pad-right(1);
 	.font-size(1.6);
 	}
@@ -223,10 +231,10 @@ text-align: left;
 
 button#back-2-top {
 .fixed;
-.bottom(5.5);
-.right(3);	
+.bottom(0);
+.right(0);	
 .no-border;
-.rounded(4px);
+.no-rounded;
 .h(5);
 .w(5);
 .pad-all(0);

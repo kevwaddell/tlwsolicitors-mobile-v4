@@ -105,7 +105,7 @@
 		z-index: 10;
 			
 			&.closed {
-			.h(4);	
+			.h(5);	
 			//.over-hide;
 				.menu-links {
 				.opacity(0.0);
@@ -832,7 +832,7 @@ aside.sidebar {
 	}
 	
 	button.icon-header {
-		.font-size(1.4);
+		.font-size(1.6);
 		.line-h(4);
 		.h(4);
 		.bg-col(@gray);
@@ -908,7 +908,7 @@ aside.sidebar {
 			.abs;
 			.right(0);
 			.top(0);
-			.col(@redMid);
+			.col(white);
 			.line-h(4);
 			.pad-right(1);
 			.font-size(1.6);
@@ -916,11 +916,16 @@ aside.sidebar {
 			
 			&:hover, &:active, &:focus {
 			.bg-col(@redMid);
-				&:after {
-				.col(white);	
-				}
 			}	
 
+		}
+		
+		h4 {
+		.font-size(2.5);	
+		}
+		
+		p {
+		.mag-bot(1.5);	
 		}
 	}
 	
@@ -932,8 +937,9 @@ aside.sidebar {
 		 }	
 		
 		input {
-		.no-rounded;
 		.border-col(@gray);
+		.caps;
+		.font-size(1.4);
 			&:focus {
 			.drop-shadow(0,0, 5px, 0.5);
 			}
@@ -954,6 +960,7 @@ aside.sidebar {
 		.border-bot(white, 0.1);
 		-webkit-font-smoothing: subpixel-antialiased;
 		.rel;
+		.font-size(1.6);
 			
 			i {
 			.abs;

@@ -313,39 +313,33 @@ max-width: 100% !important;
 }
 
 form.route-finder {
+	
 	p.submit {
 	.rel;
-	.pad-right(4);	
-	.mag-bot(0);
-		&:before {
-		.block;
-		content: "\f105";	
-		font-family: FontAwesome;
+		&:after {
+		content: "\f041";	
+		font-family: FontAwesome;	
 		.abs;
 		.right(0);
 		.top(0);
-		.w(4);
-		.h(4);
-		.bg-col(@red);
 		.col(white);
-		text-align: center;
 		.line-h(4);
-		.font-size(2);	
+		.pad-right(1);
+		.font-size(1.6);
 		}
 	}
+
 	input.btn {
 	.no-border;	
-	.bg-col(@grayDk);
+	.bg-col(@red);
 	.col(white);
 	.h(4);	
 	.pad-all(0);
 	.indent(1);
 	text-align: left;
 	.font-size(1.6);
-	.font-normal;
-	font-weight: 300;
 		&:hover, &:active, &:focus {
-		.bg-col(@gray);	
+		.bg-col(@redMid);	
 		}
 	}
 }

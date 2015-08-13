@@ -28,4 +28,6 @@ $campaigns = get_field('campaigns', 'options');
 	</div>
 		
 </section>
+
+<div class="rule"></div>
 <?php } ?>

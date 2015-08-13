@@ -140,7 +140,7 @@ function add_wide_feat_img ( $post, $classes = "" ) {
 	$img_atts['title'] = 	trim(strip_tags( $attachment->post_title ));
 	}
 	
-	echo get_the_post_thumbnail($post ,'feat-img-wide', $img_atts );
+	echo get_the_post_thumbnail($post ,'feat-img-ex-wide', $img_atts );
 	
 }
 

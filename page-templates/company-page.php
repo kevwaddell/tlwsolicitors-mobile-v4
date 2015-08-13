@@ -14,11 +14,24 @@ $page_icon = get_field('page_icon');
 $color = get_field('page_colour');
 $hide_title = get_field('hide_title'); 
 //echo '<pre>';print_r($brochure);echo '</pre>';
-if ($page_icon == 'null' || !$page_icon) {
-$page_icon = get_field('page_icon', $post->post_parent);
-}
+	if ($page_icon == 'null' || !$page_icon) {
+	$page_icon = get_field('page_icon', $post->post_parent);
+	}
+
+	if ( has_post_thumbnail() ) {
+	$img_post = get_the_ID();
+	} else {
+	$img_post = $post->post_parent;
+	$parent = get_post($img_post);	
+	
+		if (!has_post_thumbnail($img_post) && $parent->post_parent != 0) {
+		$img_post = $parent->post_parent;
+		}
+	}
+	
+	//echo '<pre>';print_r($img_post);echo '</pre>';
 ?>	
-	<?php if ( has_post_thumbnail() ) { ?>
+	<?php if ( has_post_thumbnail($img_post)  ) { ?>
 	<?php include (STYLESHEETPATH . '/_/inc/pages/page-wide-feat-img.php'); ?>
 	<?php } ?>
 

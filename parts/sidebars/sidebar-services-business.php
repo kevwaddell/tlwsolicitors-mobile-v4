@@ -1,7 +1,5 @@
 <?php
 global $how_it_works_active;
-global $freephone_num;
-global $number_pos;
 $parent = get_page($post->post_parent);
 
 //echo '<pre>';print_r($parent->post_parent);echo '</pre>';
@@ -68,9 +66,5 @@ $children = get_pages($child_args);
 	
 	</div>
 	<?php } ?>	
-	
-	<?php if ($number_pos == 'sidebar') { ?>
-			 		<p class="tel-num tel-num-<?php echo (!empty($color)) ? $color : 'red'; ?>">Call us <span>free <a href="tel:<?php echo str_replace(' ', '', $freephone_num); ?>" onclick="ga('send', 'event','Freephone click', 'tap', '<?php echo $post->post_title; ?> - Call back')" title="Call us now"><?php echo $freephone_num; ?></a></span></p>
-	<?php } ?>
 				
 </aside>
