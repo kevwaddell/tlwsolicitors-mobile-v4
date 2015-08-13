@@ -175,7 +175,7 @@ function add_gravityforms_style() {
 add_action('wp_print_styles', 'add_gravityforms_style');
 
 function custom_excerpt_length( $length ) {
-	return 15;
+	return 12;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
