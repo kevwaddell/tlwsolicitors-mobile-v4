@@ -22,6 +22,8 @@ Template Name: Personal Services page template
 	$parent = get_page($post->post_parent);
 	$how_it_works_active = get_field('hiw_active');
 	
+	//echo '<pre>';print_r($how_it_works_active);echo '</pre>';
+	
 	if ( has_post_thumbnail() ) {
 	$img_post = get_the_ID();
 	} else {
