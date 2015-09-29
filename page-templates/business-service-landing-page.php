@@ -10,6 +10,7 @@ Template Name: Business Service Landing page template
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 			<?php 
 			$freephone_num = get_field('freephone_num', 'option');
+			$links = get_field('biz_banner_links', 'option');
 			$number_pos = get_field('tel_num_position');
 			$form_active = get_field('form_activated');
 			$color = get_field('page_colour');
@@ -59,7 +60,7 @@ Template Name: Business Service Landing page template
 	
 	<div class="container-fluid">
 	
-		<div class="content pad-bot-none">
+		<div class="content">
 
 			<?php if (!empty($on_page_script)) { ?>
 			<?php echo $on_page_script; ?>
@@ -90,7 +91,7 @@ Template Name: Business Service Landing page template
 		
 	</div><!-- MAIN CONTENT CONTAINER END -->
 	
-	<?php include (STYLESHEETPATH . '/_/inc/service-page/how-it-works.php'); ?>
+	<?php include (STYLESHEETPATH . '/_/inc/business-service-page/links-menu.php'); ?>
 						
 	<?php endwhile; ?>
 	<?php endif; ?>

@@ -10,6 +10,7 @@ Template Name: Business Services page template
 <?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>			
 	<?php 
 	$freephone_num = get_field('freephone_num', 'option');
+	$links = get_field('biz_banner_links', 'option');
 	$number_pos = get_field('tel_num_position');
 				
 	if (empty($number_pos)) {
@@ -91,6 +92,8 @@ Template Name: Business Services page template
 		</div><!-- CONTENT END -->
 		
 	</div><!-- MAIN CONTENT CONTAINER END -->
+	
+	<?php include (STYLESHEETPATH . '/_/inc/business-service-page/links-menu.php'); ?>
 	
 <?php endwhile; ?>
 <?php endif; ?>
