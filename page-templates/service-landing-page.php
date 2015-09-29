@@ -58,7 +58,7 @@ Template Name: Service Landing page template
 	
 	<div class="container-fluid">
 	
-		<div class="content pad-bot-none">
+		<div class="content">
 
 			<?php if (!empty($on_page_script)) { ?>
 			<?php echo $on_page_script; ?>
