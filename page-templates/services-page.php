@@ -8,6 +8,8 @@ Template Name: Personal Services page template
 
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 	<?php 
+	$links = get_field('banner_links', 'option');
+	//$pg_title echo '<pre>';print_r($links);echo '</pre>';
 	$freephone_num = get_field('freephone_num', 'option');
 	$number_pos = get_field('tel_num_position');
 		
@@ -91,6 +93,8 @@ Template Name: Personal Services page template
 		</div><!-- CONTENT END -->
 		
 	</div><!-- MAIN CONTENT CONTAINER END -->
+	
+	<?php include (STYLESHEETPATH . '/_/inc/service-page/links-menu.php'); ?>
 	
 	<?php include (STYLESHEETPATH . '/_/inc/service-page/how-it-works.php'); ?>
 					

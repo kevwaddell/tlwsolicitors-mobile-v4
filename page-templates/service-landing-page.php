@@ -10,6 +10,7 @@ Template Name: Service Landing page template
 	<?php if ( have_posts() ): while ( have_posts() ) : the_post(); ?>	
 			<?php 
 			$freephone_num = get_field('freephone_num', 'option');
+			$links = get_field('banner_links', 'option');
 			$number_pos = get_field('tel_num_position');
 			$color = get_field('page_colour');
 			$page_icon = get_field('page_icon');
@@ -87,6 +88,8 @@ Template Name: Service Landing page template
 	</div><!-- CONTENT END -->
 		
 	</div><!-- MAIN CONTENT CONTAINER END -->
+	
+	<?php include (STYLESHEETPATH . '/_/inc/service-page/links-menu.php'); ?>
 	
 	<?php include (STYLESHEETPATH . '/_/inc/service-page/how-it-works.php'); ?>
 						

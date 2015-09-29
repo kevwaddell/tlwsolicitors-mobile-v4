@@ -61,8 +61,8 @@ body#landing-page {
 	.col(@gray);
 	.border(@gray; 0.4);
 	.rounded(8px);
-	.line-h(3.5);
-	.font-size(3.5);
+	.line-h(2);
+	.font-size(2);
 	.rel;
 	.mag-top(4);
 	
@@ -81,7 +81,7 @@ body#landing-page {
 		.col(white);
 		.font-size(3.5);
 		.line-h(4.2);
-		.rounded(25px);
+		.rounded(100%);
 		.indent(0);
 		}
 	
@@ -113,7 +113,6 @@ body#landing-page {
 			.col(white);
 			.font-size(3.5);
 			.line-h(6.2);
-			.rounded(35px);
 			.indent(0);
 			}
 	
@@ -160,21 +159,41 @@ body#landing-page {
 			p.tel-num {
 			.indent(0);
 			text-align: center;
-			.pad(6;1;2;1);
-			.font-size(4.5);
-			.line-h(4.5);
+			.pad(1;1;1;7);
+			.font-size(3);
+			.line-h(3);
 			height: auto;
-			.mag-top(7);
+			.mag-top(3);
 				&:before {
 				.abs;
-				left: 50%;
-				.top(-5);
-				.mag-left(-5);
+				.left(1);
+				.top(1);
+				.mag-left(0);
+				.h(6);
+				.w(6);	
+				.line-h(5.2);
 				}
 				
 				a {
 				.bold;	
 				.block;
+				}
+			}
+			
+			@media screen and (orientation: landscape) {
+				p.tel-num {
+				.pad-left(7);
+					&:before {
+					.top(-1);	
+					.h(7);
+					.w(7);
+					.line-h(6.2);
+					}
+						
+					a {
+					.in-block;	
+					}
+					
 				}
 			}
 		}
