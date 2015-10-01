@@ -31,6 +31,12 @@ if ( !function_exists(core_mods) ) {
 	core_mods();
 }
 
+function ewp_remove_script_version( $src ){
+	return remove_query_arg( 'ver', $src );
+}
+add_filter( 'script_loader_src', 'ewp_remove_script_version', 15, 1 );
+add_filter( 'style_loader_src', 'ewp_remove_script_version', 15, 1 );
+
 add_action( 'after_setup_theme', 'editor_styles' );
 
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
