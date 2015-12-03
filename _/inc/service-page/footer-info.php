@@ -17,8 +17,7 @@ $contact_page = get_page_by_title('Contact us');
 	<?php 
 	$dep_head_active = get_field('dep_head_active');
 	$dep_head = get_field('head_of_dep');
-	if ($post->post_parent != 0 && !$dep_head_active) {
-	$dep_head_active = get_field('dep_head_active', $post->post_parent);	
+	if ($post->post_parent != 0) {
 	$dep_head = get_field('head_of_dep', $post->post_parent);
 	}
 	$staff = get_post($dep_head);
