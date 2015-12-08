@@ -13,7 +13,9 @@
 	 event_type = 'click';	
 	 
 	}
-
+	
+	$(document).ready(function (){
+		
 	var service_select = $('select#service-select');
 	var service_area_select = $('select.service-area-select');
 	var child_service_area_select = $('select.child-service-area-select');
@@ -412,8 +414,6 @@
 		
 	});
 	
-	$(document).ready(function (){
-	
 		$('#feedback-carousel').carousel({
 			pause: false,
 			interval: 7000
@@ -436,6 +436,55 @@
 			$('#cookie-law-info-bar').next().remove();
 			
 		}
+		
+		/* XMAS Pop up Function
+	   This function controls the Xmas pop up box
+    */
+    
+    	var xmasBox = function(){
+
+			if ($('#xmas-popup-wrap').length == 1 && $('#xmas-popup-wrap').hasClass('pop-up-inactive')) {
+				
+				$('#xmas-popup-btn-wrap').removeClass('pop-up-inactive').addClass('pop-up-active');
+		
+				$('#xmas-popup-wrap').fadeIn('slow', function(){
+				
+					$('.xmas-popup-inner').removeClass('hidden').addClass('animated slideInUp');
+				
+				});
+			
+			}
+    
+		};
+
+    	//Transition end actions
+	    $('.xmas-popup-inner').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			
+			if ($(this).hasClass('bounceOutDown')) {
+			 $('#xmas-popup-wrap').fadeOut('fast').removeClass('pop-up-active').addClass('pop-up-inactive');	
+			 $('#xmas-popup-btn-wrap').removeClass('pop-up-active').addClass('pop-up-inactive');
+			 $(this).removeClass('animated bounceOutDown').addClass('hidden');
+			}
+		});
+		
+		//Button actions
+		
+		$('body').on(event_type,'button#xmas-popup-btn-open', function(e){
+	    	
+	    	xmasBox();    			
+			return false;
+			
+		});
+	
+	    
+	    $('body').on(event_type,'button#close-xmas-popup', function(e){
+		    
+		   $('.xmas-popup-inner').removeClass('slideInUp').addClass('bounceOutDown');   
+	    	      			
+			return false;
+			
+		});
+
 
 	});
 	

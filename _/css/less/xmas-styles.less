@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+#xmas-popup-btn-wrap {
+.rel;
+width: 100%;
+text-align: center;
+.animated;
+.border-bot(white; 0.4);
+	.wrap-inner {
+	.bg-col(darken(@green, 20%));	
+	.pad(1;6;1;6);	
+	}
+	
+	p {
+	.col(white);
+	.bold;
+	.font-size(1.4);
+	}
+
+	&.pop-up-inactive .wrap-inner {
+	height: auto;
+	}
+	
+	&.pop-up-active .wrap-inner {
+	height: 0px;	
+	padding: 0px;
+	border-bottom: none;
+	}
+	
+	.btn {
+	.mag-top(0.5);
+	.pad(0;1.5;0;2);
+	.line-h(3);
+	.no-border;
+	.bg-col(darken(red, 10%));
+	.col(white);
+	.bold;
+	.caps;
+	
+		i {
+		.fright;
+		.line-h(3);
+		.pad-left(1);
+		.col(@green);
+		}	
+		
+		&:hover, &:active, &:focus {
+		.bg-col(darken(red, 20%));
+		}
+	}
+	
+	.holly {
+	.abs;
+	.top(0.5);	
+	background-position: center center;	
+	.bg-repeat(no-repeat);
+	.bg-size(contain);
+	.w(6);
+	.h(6);
+	
+		&.left {
+		.left(0);	
+		.bg-img('holly-br.png');
+		}
+		
+		&.right {
+		.right(0);	
+		.bg-img('holly-bl.png');
+		}
+	}
+	
+}
+
+#xmas-popup-wrap {
+.fixed;
+.top(0);
+.left(0);
+.bottom(0);
+.right(0);
+.trans-bg(@redMid; 0.8);
+z-index: 1000;
+.none;
+
+	.xmas-popup-inner-wrap {
+		text-align: center;	
+		.pad-all(2);
+		height: 100%;
+		z-index: 2;
+		.rel;
+		
+		&:before {
+			content: "";
+			.in-block;
+			height: 100%;
+			vertical-align: middle;
+			margin-right: -0.25em;
+		}
+	}
+
+	.xmas-popup-inner {
+	.in-block;
+	vertical-align: middle;
+	width: 90%;
+	.rounded(20px);
+	.drop-shadow(0, 0, 20px, 0.7);
+	.bg-col(white);
+	.bg-img('xmas-logo.gif');
+	.bg-repeat(no-repeat);
+	background-position: center 10px;
+	.bg-size(50%);
+	.pad(12; 1; 2; 1);
+	text-align: left;
+	.rel;
+	
+		h3 {
+		font-family: 'Lobster', cursive;
+		.col(@red);
+		.font-size(2);
+		.mag-bot(1);
+		}
+		
+		p {
+		.bold;
+		.mag-bot(1);	
+		.font-size(1.4);
+		}
+				
+		ul li {
+		text-align: center;
+		.font-size(1.2);
+		}
+		
+		button#close-xmas-popup {
+		.abs;
+		.bottom(-1.5);
+		left: 50%;	
+		.max-w(20);
+		.mag-left(-10);
+		.no-border;
+		.bg-col(darken(@green, 20%));
+		.col(white);
+		.caps;
+		.pad(0;2;0;2);
+		.line-h(3);
+		.bold;
+			
+			&:hover, &:active, &:focus {
+			.bg-col(@green);
+			}
+		}
+		
+		.holly {
+		.abs;
+		.w(5);
+		.h(5);
+		background-position: center center;	
+		.bg-repeat(no-repeat);
+		.bg-size(contain);
+			&.tl, &.tr {
+			.top(-2.5);
+			}
+			
+			&.bl, &.br {
+			.bottom(-2.5);
+			}
+			
+			&.tl, &.bl {
+			.left(-2.5);	
+			}
+			
+			&.tr, &.br {
+			.right(-2.5);	
+			}
+			
+			&.tl {
+			.bg-img('holly-tl.png');
+			}
+			
+			&.tr {
+			.bg-img('holly-tr.png');
+			}
+			
+			&.bl {
+			.bg-img('holly-bl.png');
+			}
+			
+			&.br {
+			.bg-img('holly-br.png');
+			}
+		
+		}
+		
+		@media only screen and (orientation: landscape)  {
+		.bg-size(30%);
+		background-position: center 10px;
+		.pad-top(12.5);
+		.pad-bot(1.5);
+			h3 {
+			.mag-bot(0.5);
+			}
+			
+			p {	
+			.font-size(1.2);
+			.mag-bot(0.5);	
+			}
+			ul {
+			.columns(50%, 2, 50px, white, solid, 0px);	
+			.mag-bot(0.5);
+			}
+			
+			button#close-xmas-popup {
+			.bottom(-1.5);	
+			}
+		}
+	}
+}
+
+body.logged-in #xmas-popup-btn-wrap .holly {
+	&.left {
+	.left(6);	
+	}
+}
