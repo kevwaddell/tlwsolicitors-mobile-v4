@@ -28,9 +28,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </nav>
 
-<?php include (STYLESHEETPATH . '/_/inc/xmas/xmas-popup.php'); ?>
-
 <div class="tlw-wrapper nav-closed">
+	
+	<?php include (STYLESHEETPATH . '/_/inc/xmas/xmas-popup-banner.php'); ?>
 	
 	<!-- HEADER LOGO AND NAVIGATION -->
 	<?php include (STYLESHEETPATH . '/_/inc/global/masthead.php'); ?>	

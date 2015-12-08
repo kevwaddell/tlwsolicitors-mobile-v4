@@ -29,6 +29,8 @@
 		
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('User actions') ) : ?><?php endif; ?>
 		
+		<?php include (STYLESHEETPATH . '/_/inc/xmas/xmas-popup.php'); ?>
+		
 		<?php include (STYLESHEETPATH . '/_/inc/global/no-script.php'); ?>
 				
 		<?php wp_footer(); ?>
