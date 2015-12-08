@@ -25,6 +25,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 </nav>
 
+<?php include (STYLESHEETPATH . '/_/inc/xmas/xmas-popup.php'); ?>
+
 <div class="tlw-wrapper nav-closed">
 	
 	<!-- HEADER LOGO AND NAVIGATION -->
