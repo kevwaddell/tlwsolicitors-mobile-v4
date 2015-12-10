@@ -108,7 +108,7 @@ z-index: 1000;
 	.bg-img('xmas-logo.gif');
 	.bg-repeat(no-repeat);
 	background-position: center 10px;
-	.bg-size(50%);
+	.bg-size(60%);
 	.pad(12; 1; 2; 1);
 	text-align: left;
 	.rel;
@@ -123,12 +123,14 @@ z-index: 1000;
 		p {
 		.bold;
 		.mag-bot(1);	
-		.font-size(1.4);
+		.font-size(1.2);
+		.line-h(1.6);
 		}
 				
 		ul li {
 		text-align: center;
-		.font-size(1.2);
+		.font-size(1);
+		.line-h(1.4);
 		}
 		
 		button#close-xmas-popup {
@@ -192,20 +194,20 @@ z-index: 1000;
 		}
 		
 		@media only screen and (orientation: landscape)  {
-		.bg-size(30%);
+		.bg-size(25%);
 		background-position: center 10px;
-		.pad-top(12.5);
+		.pad-top(9);
 		.pad-bot(1.5);
 			h3 {
 			.mag-bot(0.5);
 			}
 			
 			p {	
-			.font-size(1.2);
 			.mag-bot(0.5);	
 			}
+			
 			ul {
-			.columns(50%, 2, 50px, white, solid, 0px);	
+			.columns(50%, 2, 20px, white, solid, 0px);	
 			.mag-bot(0.5);
 			}
 			
