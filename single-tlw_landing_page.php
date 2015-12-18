@@ -35,13 +35,13 @@ $hide_title = get_field('hide_title');
 	 	</div>
 	 	
 		 <?php get_template_part( 'parts/sidebars/sidebar', 'landing-page' ); ?>	
-
-	</article> 	
-	
-	<?php if ($number_pos == 'bottom' || $number_pos == 'sidebar') { ?>
+		 
+		 <?php if ($number_pos == 'bottom' || $number_pos == 'sidebar') { ?>
 		<p class="tel-num tel-num-<?php echo (!empty($color)) ? $color : 'red'; ?>">Call us <span>free <a href="tel:<?php echo str_replace(' ', '', $freephone_num); ?>" onclick="ga('send', 'event','Freephone click', 'tap', '<?php echo $post->post_title; ?> - Call back')" title="Call us now"><?php echo $freephone_num; ?></a></span></p>
 	<?php } ?>
 
+	</article> 	
+	
 	
 </main>
 		
