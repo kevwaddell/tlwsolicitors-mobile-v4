@@ -1,18 +1,33 @@
 .hp-intro {
-	h1 br {
-	.none;		
+	h2 {
+	.caps;	
+	.font-size(2.2);	
+	.line-h(2.4);
 	}
 	p {
 	//.mag-bot(0);
-	.font-size(1.4);
-	.line-h(1.8);	
+	.font-size(1.2);
+	.line-h(1.6);	
 	}
 	
 	p.lead {
-	.font-size(2);
-	.line-h(2.2);		
+	.font-size(1.7);
+	.line-h(1.9);		
 	.col(@gray);
+	.mag-bot(1);
 	}	
+	
+	@media screen and (orientation: landscape) {
+		h2 {
+		.font-size(2.4);	
+		.line-h(2.6);	
+		}
+		
+		p {
+		.mag-left(5);
+		.mag-right(5);	
+		}
+	}
 }
 
 #hp-campaigns {
