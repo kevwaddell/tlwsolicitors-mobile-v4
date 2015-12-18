@@ -57,70 +57,69 @@ body#landing-page {
 	}
 	
 	p.tel-num {
-	.pad(2.5;1;1;1);
-	.col(@gray);
-	.border(@gray; 0.4);
-	.rounded(8px);
-	.line-h(2);
-	.font-size(2);
-	.rel;
-	.mag-top(4);
+	.mag-top(3);
+.mag-bot(3);
+.col(@gray);
+.border(@red; 0.3);
+.rounded(8px);
+.font-size(2.4);
+.line-h(2);
+text-align: center;
+.rel;
+.pad-top(2.5);
+.pad-bot(1);
+
+	&:before {
+	.abs;
+	left: 50%;
+	.top(-2);
+	.h(4);
+	.w(4);	
+	.bg-col(white);
+	.col(@redMid);
+	.border(@red; 0.3);
+	content: "\f095";	
+	font-family: FontAwesome;
+	text-align: center;
+	.col(white);
+	.font-size(2.5);
+	.line-h(3.6);
+	.rounded(20px);
+	.indent(0);
+	.mag-left(-2);
+	}
 	
+	span {
+	.block;
+	.caps;
+	.bold;
+	.col(@red);	
+	}
+	
+	a {
+	.col(@red);		
+	}
+	
+	@media screen and (orientation: landscape) {
+	.font-size(3);
+	.pad-top(1.5);
+	.pad-bot(1.5);
+	.pad-left(7);
 		&:before {
-		left: 50%;
-		.top(-2.5);
-		.mag-left(-2.5);
-		.abs;
-		.h(5);
-		.w(5);	
-		.bg-col(@grayDk);
-		.border(@gray; 0.4);
-		content: "\f095";	
-		font-family: FontAwesome;
-		text-align: center;
-		.col(white);
+		.left(1);
+		.top(-1);
+		.h(7);
+		.w(7);	
 		.font-size(3.5);
-		.line-h(4.2);
+		.line-h(6.6);	
 		.rounded(100%);
-		.indent(0);
-		}
-	
-		span {
-		.caps;
-		.bold;
-		.col(@grayDk);	
+		.mag-left(0);
 		}
 		
-		a {
-		.col(@grayDk);	
-		text-decoration: none;	
-		.block;
-		}
-	
-		@media screen and (orientation: landscape) {
-		.pad(1;1;1;1);
-		.line-h(3);
-		.font-size(3);
-		.indent(10);
-		.mag-top(3);
-			
-			&:before {
-			.left(2);
-			.top(-1);
-			.mag-left(0);
-			.h(7);
-			.w(7);
-			.col(white);
-			.font-size(3.5);
-			.line-h(6.2);
-			.indent(0);
-			}
-	
-		 	a {
-			 .inline;	
-		 	}
-		 		
-		}
+		span {
+		.inline;	
+		}	
+	}
 		
 		&.tel-num-red {
 		.tel-num-col(@red);
@@ -156,46 +155,6 @@ body#landing-page {
 	
 		.sidebar {
 		.pad-top(1);
-			p.tel-num {
-			.indent(0);
-			text-align: center;
-			.pad(1;1;1;7);
-			.font-size(3);
-			.line-h(3);
-			height: auto;
-			.mag-top(3);
-				&:before {
-				.abs;
-				.left(1);
-				.top(1);
-				.mag-left(0);
-				.h(6);
-				.w(6);	
-				.line-h(5.2);
-				}
-				
-				a {
-				.bold;	
-				.block;
-				}
-			}
-			
-			@media screen and (orientation: landscape) {
-				p.tel-num {
-				.pad-left(7);
-					&:before {
-					.top(-1);	
-					.h(7);
-					.w(7);
-					.line-h(6.2);
-					}
-						
-					a {
-					.in-block;	
-					}
-					
-				}
-			}
 		}
 	
 		.page-wrapper {
