@@ -1,6 +1,5 @@
 <?php
 global $how_it_works_active;
-global $freephone_num;
 global $links;
 ?>
 <aside class="sidebar">
