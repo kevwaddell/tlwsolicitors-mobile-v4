@@ -79,6 +79,8 @@ Template Name: Personal Services page template
 								<?php the_content(); ?>
 							</div>
 							
+							<?php include (STYLESHEETPATH . '/_/inc/service-page/faqs.php'); ?>
+							
 							<?php include (STYLESHEETPATH . '/_/inc/service-page/footer-info.php'); ?>
 																		
 						</div>

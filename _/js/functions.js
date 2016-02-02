@@ -371,6 +371,41 @@
 		
 	});
 	
+	// 	FAQ's
+	$('body').on(event_type,'div.faq-question', function(e){
+		
+		var parent = $(this).parent();
+		var siblings = $(parent).siblings();
+		
+		//console.log(siblings);
+		
+		if (siblings.hasClass('item-open')) {
+		siblings.removeClass('item-open').addClass('item-closed');	
+		}
+		
+		parent.toggleClass('item-closed item-open');
+		
+		return false;
+		
+	});
+	
+	$('body').on(event_type,'div.faq-header', function(e){
+		
+		var next = $(this).next();
+		
+		if ($('div.faq-header').not(this).hasClass('faqs-open')) {
+		$('div.faq-header').removeClass('faqs-open').addClass('faqs-closed');	
+		$('div.faqs-sub-pgs').removeClass('faqs-sub-open').addClass('faqs-sub-closed');	
+		}
+		
+		$(this).toggleClass('faqs-closed faqs-open');
+		next.toggleClass('faqs-sub-closed faqs-sub-open');
+		
+		return false;
+		
+	});
+
+	
 	//-------------------------------
 	
 	
