@@ -9,6 +9,11 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="format-detection" content="telephone=yes">
+	
+	<meta name="geo.region" content="GB" />
+	<meta name="geo.placename" content="North Shields" />
+	<meta name="geo.position" content="55.009452;-1.490004" />
+	<meta name="ICBM" content="55.009452, -1.490004" />
 		   
 	<link rel="apple-touch-icon" href="<?php bloginfo('stylesheet_directory'); ?>/_/img/touch-icon-iphone.png" /> 
 	<link rel="apple-touch-icon" sizes="76x76" href="<?php bloginfo('template_directory'); ?>/_/img/touch-icon-ipad.png" /> 
