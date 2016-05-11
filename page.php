@@ -4,6 +4,7 @@
 
 <?php 
 $color = get_field('page_colour');
+$form_active = get_field('form_activated');
 $hide_title = get_field('hide_title'); 
 $number_pos = get_field('tel_num_position');
 //echo '<pre>';print_r($brochure);echo '</pre>';
@@ -33,6 +34,17 @@ $number_pos = get_field('tel_num_position');
 					<div class="main-txt">
 					<?php the_content(); ?>
 					</div>
+					
+					<?php if ($form_active) : 
+					$form = get_field('form');	
+					?>
+					<div class="contact-form">
+						<div class="well well-lg">
+						<?php gravity_form($form->id, false, false, false, null, true); ?>	
+						</div>		
+					</div>	
+					
+					<?php endif; ?>
 					
 				</article>
 			 	
