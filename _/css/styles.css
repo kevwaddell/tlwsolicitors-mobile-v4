@@ -10216,9 +10216,6 @@ body#landing-page .lp-form .gform_description {
   text-align: center;
   color: white;
 }
-body#landing-page .lp-form .gfield_label {
-  display: none;
-}
 body#landing-page .lp-form .gfield {
   margin-bottom: 10px;
 }
