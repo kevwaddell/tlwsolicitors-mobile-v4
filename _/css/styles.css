@@ -10294,12 +10294,16 @@ body#landing-page .lp-form.lp-form-red h3 i {
 body#landing-page .lp-form.lp-form-red .gform_wrapper {
   background-color: #630429;
 }
-body#landing-page .lp-form.lp-form-red input.gform_button {
+body#landing-page .lp-form.lp-form-red input.gform_button,
+body#landing-page .lp-form.lp-form-red input.button {
   background-color: #C60751;
 }
 body#landing-page .lp-form.lp-form-red input.gform_button:hover,
+body#landing-page .lp-form.lp-form-red input.button:hover,
 body#landing-page .lp-form.lp-form-red input.gform_button:active,
-body#landing-page .lp-form.lp-form-red input.gform_button:focus {
+body#landing-page .lp-form.lp-form-red input.button:active,
+body#landing-page .lp-form.lp-form-red input.gform_button:focus,
+body#landing-page .lp-form.lp-form-red input.button:focus {
   background-color: #f60a65;
 }
 body#landing-page .lp-form.lp-form-purple h3 {
@@ -10311,12 +10315,16 @@ body#landing-page .lp-form.lp-form-purple h3 i {
 body#landing-page .lp-form.lp-form-purple .gform_wrapper {
   background-color: #72467f;
 }
-body#landing-page .lp-form.lp-form-purple input.gform_button {
+body#landing-page .lp-form.lp-form-purple input.gform_button,
+body#landing-page .lp-form.lp-form-purple input.button {
   background-color: #A677B4;
 }
 body#landing-page .lp-form.lp-form-purple input.gform_button:hover,
+body#landing-page .lp-form.lp-form-purple input.button:hover,
 body#landing-page .lp-form.lp-form-purple input.gform_button:active,
-body#landing-page .lp-form.lp-form-purple input.gform_button:focus {
+body#landing-page .lp-form.lp-form-purple input.button:active,
+body#landing-page .lp-form.lp-form-purple input.gform_button:focus,
+body#landing-page .lp-form.lp-form-purple input.button:focus {
   background-color: #bc98c6;
 }
 body#landing-page .lp-form.lp-form-green h3 {
@@ -10328,12 +10336,16 @@ body#landing-page .lp-form.lp-form-green h3 i {
 body#landing-page .lp-form.lp-form-green .gform_wrapper {
   background-color: #789b2c;
 }
-body#landing-page .lp-form.lp-form-green input.gform_button {
+body#landing-page .lp-form.lp-form-green input.gform_button,
+body#landing-page .lp-form.lp-form-green input.button {
   background-color: #ACD15C;
 }
 body#landing-page .lp-form.lp-form-green input.gform_button:hover,
+body#landing-page .lp-form.lp-form-green input.button:hover,
 body#landing-page .lp-form.lp-form-green input.gform_button:active,
-body#landing-page .lp-form.lp-form-green input.gform_button:focus {
+body#landing-page .lp-form.lp-form-green input.button:active,
+body#landing-page .lp-form.lp-form-green input.gform_button:focus,
+body#landing-page .lp-form.lp-form-green input.button:focus {
   background-color: #c0dc84;
 }
 body#landing-page .lp-form.lp-form-pink h3 {
@@ -10345,12 +10357,16 @@ body#landing-page .lp-form.lp-form-pink h3 i {
 body#landing-page .lp-form.lp-form-pink .gform_wrapper {
   background-color: #c2183e;
 }
-body#landing-page .lp-form.lp-form-pink input.gform_button {
+body#landing-page .lp-form.lp-form-pink input.gform_button,
+body#landing-page .lp-form.lp-form-pink input.button {
   background-color: #EA5677;
 }
 body#landing-page .lp-form.lp-form-pink input.gform_button:hover,
+body#landing-page .lp-form.lp-form-pink input.button:hover,
 body#landing-page .lp-form.lp-form-pink input.gform_button:active,
-body#landing-page .lp-form.lp-form-pink input.gform_button:focus {
+body#landing-page .lp-form.lp-form-pink input.button:active,
+body#landing-page .lp-form.lp-form-pink input.gform_button:focus,
+body#landing-page .lp-form.lp-form-pink input.button:focus {
   background-color: #f0839c;
 }
 body#landing-page .lp-form.lp-form-orange h3 {
@@ -10362,12 +10378,16 @@ body#landing-page .lp-form.lp-form-orange h3 i {
 body#landing-page .lp-form.lp-form-orange .gform_wrapper {
   background-color: #df7c05;
 }
-body#landing-page .lp-form.lp-form-orange input.gform_button {
+body#landing-page .lp-form.lp-form-orange input.gform_button,
+body#landing-page .lp-form.lp-form-orange input.button {
   background-color: #FBAD4F;
 }
 body#landing-page .lp-form.lp-form-orange input.gform_button:hover,
+body#landing-page .lp-form.lp-form-orange input.button:hover,
 body#landing-page .lp-form.lp-form-orange input.gform_button:active,
-body#landing-page .lp-form.lp-form-orange input.gform_button:focus {
+body#landing-page .lp-form.lp-form-orange input.button:active,
+body#landing-page .lp-form.lp-form-orange input.gform_button:focus,
+body#landing-page .lp-form.lp-form-orange input.button:focus {
   background-color: #fcc481;
 }
 body#landing-page .lp-form.lp-form-blue h3 {
@@ -10379,12 +10399,16 @@ body#landing-page .lp-form.lp-form-blue h3 i {
 body#landing-page .lp-form.lp-form-blue .gform_wrapper {
   background-color: #184258;
 }
-body#landing-page .lp-form.lp-form-blue input.gform_button {
+body#landing-page .lp-form.lp-form-blue input.gform_button,
+body#landing-page .lp-form.lp-form-blue input.button {
   background-color: #2D7EA9;
 }
 body#landing-page .lp-form.lp-form-blue input.gform_button:hover,
+body#landing-page .lp-form.lp-form-blue input.button:hover,
 body#landing-page .lp-form.lp-form-blue input.gform_button:active,
-body#landing-page .lp-form.lp-form-blue input.gform_button:focus {
+body#landing-page .lp-form.lp-form-blue input.button:active,
+body#landing-page .lp-form.lp-form-blue input.gform_button:focus,
+body#landing-page .lp-form.lp-form-blue input.button:focus {
   background-color: #3e9acb;
 }
 .links-menu {
