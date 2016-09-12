@@ -10297,6 +10297,7 @@ body#landing-page .lp-form.lp-form-red .gform_wrapper {
 body#landing-page .lp-form.lp-form-red input.gform_button,
 body#landing-page .lp-form.lp-form-red input.button {
   background-color: #C60751;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-red input.gform_button:hover,
 body#landing-page .lp-form.lp-form-red input.button:hover,
@@ -10318,6 +10319,7 @@ body#landing-page .lp-form.lp-form-purple .gform_wrapper {
 body#landing-page .lp-form.lp-form-purple input.gform_button,
 body#landing-page .lp-form.lp-form-purple input.button {
   background-color: #A677B4;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-purple input.gform_button:hover,
 body#landing-page .lp-form.lp-form-purple input.button:hover,
@@ -10339,6 +10341,7 @@ body#landing-page .lp-form.lp-form-green .gform_wrapper {
 body#landing-page .lp-form.lp-form-green input.gform_button,
 body#landing-page .lp-form.lp-form-green input.button {
   background-color: #ACD15C;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-green input.gform_button:hover,
 body#landing-page .lp-form.lp-form-green input.button:hover,
@@ -10360,6 +10363,7 @@ body#landing-page .lp-form.lp-form-pink .gform_wrapper {
 body#landing-page .lp-form.lp-form-pink input.gform_button,
 body#landing-page .lp-form.lp-form-pink input.button {
   background-color: #EA5677;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-pink input.gform_button:hover,
 body#landing-page .lp-form.lp-form-pink input.button:hover,
@@ -10381,6 +10385,7 @@ body#landing-page .lp-form.lp-form-orange .gform_wrapper {
 body#landing-page .lp-form.lp-form-orange input.gform_button,
 body#landing-page .lp-form.lp-form-orange input.button {
   background-color: #FBAD4F;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-orange input.gform_button:hover,
 body#landing-page .lp-form.lp-form-orange input.button:hover,
@@ -10402,6 +10407,7 @@ body#landing-page .lp-form.lp-form-blue .gform_wrapper {
 body#landing-page .lp-form.lp-form-blue input.gform_button,
 body#landing-page .lp-form.lp-form-blue input.button {
   background-color: #2D7EA9;
+  border: none;
 }
 body#landing-page .lp-form.lp-form-blue input.gform_button:hover,
 body#landing-page .lp-form.lp-form-blue input.button:hover,
