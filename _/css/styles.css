@@ -10207,6 +10207,9 @@ body#landing-page .lp-form .gform_wrapper {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
+body#landing-page .lp-form .gform_body {
+  color: white;
+}
 body#landing-page .lp-form .gform_description {
   display: block;
   font-weight: bold;
