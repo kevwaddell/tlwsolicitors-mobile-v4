@@ -22,18 +22,19 @@
 	<?php wp_head(); ?>
 	
 	<?php 
-	$url = explode('/',$_SERVER['REQUEST_URI']);
-	global $post;
-	$global_scripts = get_field('global_scripts', 'options');
-	
-	if ( isset($_COOKIE['font_size']) ) {
-    $font_size = $_COOKIE['font_size'];	
-	} else {
-	$font_size = "txt-sm";	
+		
+	if ( isset($_GET['src']) && $_GET['src'] == "mis-sold-solar-co-uk" ) {
+	setcookie("src",$_GET['src'] , strtotime( '+6 months' ), "/financial-mis-selling/solar-panel-mis-selling" );
 	}
+	
+	if ( isset($_GET['gclid']) ) {
+	setcookie("gclid",$_GET['gclid'] ,0, '/' );
+	} 
 	?>
 	
-	<?php if (!empty($global_scripts)) { ?>
+	<?php 
+	$global_scripts = get_field('global_scripts', 'options');	
+	if (!empty($global_scripts)) { ?>
 	<?php echo $global_scripts; ?>
 	<?php } ?>
 	
